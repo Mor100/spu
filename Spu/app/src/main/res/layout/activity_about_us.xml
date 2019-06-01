@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#f5f5f5"
+    >
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tb_about_us"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        app:title="             关于我们"
+        android:background="@color/colorRedDeep"
+        app:navigationIcon="@drawable/ic_back"
+        app:titleTextColor="#ffffff"></android.support.v7.widget.Toolbar>
+    <ImageView
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@mipmap/ic_launcher"
+        android:layout_width="70dp"
+        android:layout_height="70dp" />
+    <TextView
+
+        android:textColor="#000000"
+        android:text="六云盘/1.0.0"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:padding="10dp"
+        android:background="#ffffff"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/aboutus"
+        android:textColor="@color/text_black"
+        android:layout_width="match_parent"
+        android:layout_height="280dp" />
+    <Button
+        android:id="@+id/btn_check_update"
+        android:layout_marginTop="20dp"
+        android:text="检测更新"
+        android:background="#ffffff"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

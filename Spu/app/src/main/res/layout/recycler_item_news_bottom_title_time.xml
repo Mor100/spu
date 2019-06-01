@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="85dp">
+
+    <TextView
+        android:id="@+id/tv_news_recycler_bigpic_item_title"
+        android:textSize="18sp"
+        android:text="@string/tipoffListTitle2"
+        android:textColor="@color/text_black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <RelativeLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_centerVertical="true"
+            android:textSize="9sp"
+            android:text="置顶"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp"
+            android:textColor="@color/status_color_red"
+            android:background="@drawable/shape_gov_nows_red_no_corners"
+            android:id="@+id/tv_news_recycler_bigpic_item_title_top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            />
+        <TextView
+            android:textSize="9sp"
+            android:layout_marginLeft="3dp"
+            android:layout_toRightOf="@+id/tv_news_recycler_bigpic_item_title_top"
+            android:id="@+id/iv_news_recycler_bigpic_item_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="08-04 14:54"
+            />
+
+        <TextView
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:visibility="gone"
+            android:text="已办结"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp"
+            android:textColor="@color/SeaGreen"
+            android:background="@drawable/shape_gov_nows_green"
+            android:id="@+id/tv_news_recycler_bigpic_item_title_degree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+
+            />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+  >
+
+
+    <LinearLayout
+        android:id="@+id/liner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.spu.dong.spu.activity.kai.view.RankingsVoiceItemView
+            android:id="@+id/satisfaction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            app:rankings_icon="@drawable/q1"
+            app:rankings_text="满意度"></com.spu.dong.spu.activity.kai.view.RankingsVoiceItemView>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:background="#d3d3d3" />
+
+        <com.spu.dong.spu.activity.kai.view.RankingsVoiceItemView
+            android:id="@+id/recovery_rate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:rankings_icon="@drawable/q3"
+            app:rankings_text="回复率"></com.spu.dong.spu.activity.kai.view.RankingsVoiceItemView>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:background="#d3d3d3" />
+
+        <com.spu.dong.spu.activity.kai.view.RankingsVoiceItemView
+            android:id="@+id/comprehensive_rank"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:rankings_icon="@drawable/q5"
+            app:rankings_text="综合排名"></com.spu.dong.spu.activity.kai.view.RankingsVoiceItemView>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#d3d3d3"/>
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </FrameLayout>
+</LinearLayout>

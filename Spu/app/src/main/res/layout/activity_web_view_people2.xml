@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <include layout="@layout/include_top_focuson2"/>
+
+
+    <LinearLayout
+        android:padding="5dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:padding="5dp"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/question"
+                />
+
+            <TextView
+                android:id="@+id/tv_people_dealflag"
+                android:layout_gravity="center_horizontal"
+                android:text="已审核"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:textColor="@color/status_color_red"
+                android:textSize="10sp"
+                android:background="@drawable/shape_gov_nows_red"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:padding="5dp"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_people_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="下水道堵塞无人管"
+                android:textSize="15sp"
+                android:textColor="@color/text_black"
+                />
+            <LinearLayout
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/tv_people_send"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="匿名发表"
+                    android:textSize="13sp"
+                    android:textColor="@color/news_tag_border_blue"
+                    />
+                <TextView
+
+                    android:layout_marginLeft="8dp"
+                    android:id="@+id/tv_people_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2018-03-25 21:56"
+                    android:textSize="10sp"
+                    />
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_marginTop="5dp"
+               android:layout_marginRight="40dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_people_content"
+                android:text="@string/peoplecontent"
+                android:textSize="14sp"
+                android:textColor="@color/text_black"
+                />
+            <ImageView
+                android:id="@+id/iv_people_content_image"
+                android:layout_marginTop="10dp"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@drawable/nopic"
+
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/v_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey"
+        ></View>
+
+
+</LinearLayout>

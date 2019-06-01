@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app = "http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.spu.dong.spu.activity.view.NoScrollViewPager
+        android:id="@+id/rv_main"
+        android:layout_above="@+id/bbl_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </com.spu.dong.spu.activity.view.NoScrollViewPager>
+
+    <com.chaychan.library.BottomBarLayout
+        android:id="@+id/bbl_main"
+        android:background="@color/tab_bg"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <com.chaychan.library.BottomBarItem
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            app:iconNormal="@drawable/news"
+            app:iconSelected="@drawable/newspress"
+            app:itemText="@string/firstname"
+            app:itemTextSize="8sp"
+            app:textColorSelected="@color/status_color_red"
+            android:layout_height="match_parent">
+
+        </com.chaychan.library.BottomBarItem>
+        <com.chaychan.library.BottomBarItem
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            app:iconNormal="@drawable/gov"
+            app:iconSelected="@drawable/govpress"
+            app:itemText="@string/secondname"
+            app:itemTextSize="8sp"
+            app:textColorSelected="@color/status_color_red"
+            android:layout_height="match_parent">
+
+        </com.chaychan.library.BottomBarItem>
+        <com.chaychan.library.BottomBarItem
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            app:iconNormal="@drawable/service"
+            app:iconSelected="@drawable/servicepress"
+            app:itemText="@string/thridname"
+            app:itemTextSize="8sp"
+            app:textColorSelected="@color/status_color_red"
+            android:layout_height="match_parent">
+
+        </com.chaychan.library.BottomBarItem>
+        <com.chaychan.library.BottomBarItem
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            app:iconNormal="@drawable/tip"
+            app:iconSelected="@drawable/tippress"
+            app:itemText="@string/fouthname"
+            app:itemTextSize="8sp"
+            app:textColorSelected="@color/status_color_red"
+            android:layout_height="match_parent">
+
+        </com.chaychan.library.BottomBarItem>
+        <com.chaychan.library.BottomBarItem
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            app:iconNormal="@drawable/me"
+            app:iconSelected="@drawable/mepress"
+            app:itemText="@string/fifthname"
+            app:itemTextSize="8sp"
+            app:textColorSelected="@color/status_color_red"
+            android:layout_height="match_parent">
+
+        </com.chaychan.library.BottomBarItem>
+
+    </com.chaychan.library.BottomBarLayout>
+</RelativeLayout>

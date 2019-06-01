@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    xmlns:app ="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:background="@color/tab_write"
+        android:layout_width="match_parent"
+        android:layout_height="35dp">
+        <ImageView
+
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/selector_back"
+            android:paddingLeft="10dp"
+            android:scaleType="center"/>
+
+        <com.androidkun.xtablayout.XTabLayout
+
+            android:layout_centerHorizontal="true"
+            android:background="@color/tab_write"
+            android:id="@+id/ctb_news_tab"
+            android:layout_width="250dp"
+            app:xTabMode="fixed"
+            app:xTabSelectedTextSize="@dimen/sp_18"
+            app:xTabTextSize="@dimen/sp_16"
+            app:xTabBackground="@color/tab_write"
+            app:xTabSelectedTextColor="@color/status_color_red"
+
+            app:xTabPaddingStart="12dp"
+            app:xTabPaddingEnd="8dp"
+            app:xTabMaxWidth="200dp"
+            app:xTabMinWidth="20dp"
+
+            android:layout_height="35dp">
+
+        </com.androidkun.xtablayout.XTabLayout>
+
+
+    </RelativeLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_my_focus"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    </android.support.v4.view.ViewPager>
+
+</LinearLayout>

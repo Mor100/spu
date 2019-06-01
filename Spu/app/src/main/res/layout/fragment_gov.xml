@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app ="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:background="@color/colorRedDeep"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <RadioGroup
+                android:id="@+id/rg_gov"
+                android:background="@drawable/shape_gov_title_background"
+                android:orientation="horizontal"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <RadioButton
+                    android:id="@+id/rb_gov_zheng"
+                    android:textColor="@color/selector_text_redwhite"
+                    android:textSize="16sp"
+                    android:paddingRight="20dp"
+                    android:paddingTop="3dp"
+                    android:paddingBottom="3dp"
+                    android:background="@drawable/selector_gov_title_left"
+                    android:paddingLeft="20dp"
+                    android:text="政务"
+                    android:button="@null"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <RadioButton
+                    android:id="@+id/rb_gov_bu"
+                    android:textColor="@color/selector_text_redwhite"
+                    android:textSize="16sp"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="3dp"
+                    android:paddingBottom="3dp"
+                    android:background="@drawable/selector_gov_title_right"
+                    android:paddingRight="20dp"
+                    android:text="部门"
+                    android:button="@null"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </RadioGroup>
+
+            <ImageView
+                android:id="@+id/iv_gov_myfocus"
+                android:background="@drawable/person"
+                android:layout_centerVertical="true"
+                android:padding="3dp"
+                android:layout_alignParentRight="true"
+                android:layout_width="30dp"
+                android:layout_marginRight="5dp"
+                android:layout_height="30dp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@+id/ll_gov_zheng"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <com.androidkun.xtablayout.XTabLayout
+                android:background="@color/tab_write"
+                android:id="@+id/ctb_news_tab"
+                android:layout_width="match_parent"
+                app:xTabMode="fixed"
+                app:xTabSelectedTextSize="@dimen/sp_18"
+                app:xTabTextSize="@dimen/sp_16"
+                app:xTabBackground="@color/tab_write"
+                app:xTabSelectedTextColor="@color/status_color_red"
+
+                app:xTabPaddingStart="12dp"
+                app:xTabPaddingEnd="8dp"
+                app:xTabMaxWidth="200dp"
+                app:xTabMinWidth="20dp"
+
+                android:layout_height="35dp">
+
+            </com.androidkun.xtablayout.XTabLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/vp_news"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                </android.support.v4.view.ViewPager>
+
+
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:visibility="gone"
+                android:background="@drawable/shape_demo_write"
+                android:gravity="center"
+                android:id="@+id/rl_gov_people"
+                android:layout_width="60dp"
+                android:layout_height="60dp"></RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:visibility="gone"
+            android:orientation="vertical"
+            android:id="@+id/ll_gov_bu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#f5f5f5"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="1dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <com.spu.dong.spu.activity.kai.view.ItemViewVertical
+                            android:id="@+id/item_fazhanhegaige"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="0.5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/btn_click_selector"
+                            app:icon_vertical="@drawable/image001"
+                            app:title_text_vertical="宁夏发展和改革"></com.spu.dong.spu.activity.kai.view.ItemViewVertical>
+
+                        <com.spu.dong.spu.activity.kai.view.ItemViewVertical
+                            android:id="@+id/item_jingjihexingxihua"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="0.5dp"
+                            android:layout_marginRight="0.5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/btn_click_selector"
+                            app:icon_vertical="@drawable/image005"
+                            app:title_text_vertical="宁夏经济和信息化委员会"></com.spu.dong.spu.activity.kai.view.ItemViewVertical>
+
+                        <com.spu.dong.spu.activity.kai.view.ItemViewVertical
+                            android:id="@+id/item_jiaoyuting"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="0.5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/btn_click_selector"
+                            app:icon_vertical="@drawable/image001"
+                            app:title_text_vertical="宁夏教育厅"></com.spu.dong.spu.activity.kai.view.ItemViewVertical>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="1dp"
+                        android:background="#f5f5f5"
+                        android:orientation="horizontal">
+
+                        <com.spu.dong.spu.activity.kai.view.ItemViewVertical
+                            android:id="@+id/item_kexuejishuting"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="0.5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/btn_click_selector"
+                            app:icon_vertical="@drawable/image007"
+                            app:title_text_vertical="宁夏科学技术厅"></com.spu.dong.spu.activity.kai.view.ItemViewVertical>
+
+                        <com.spu.dong.spu.activity.kai.view.ItemViewVertical
+                            android:id="@+id/item_shengjiwei"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="0.5dp"
+                            android:layout_marginRight="0.5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/btn_click_selector"
+                            app:icon_vertical="@drawable/image014"
+                            app:title_text_vertical="宁夏公安厅交通管理局"></com.spu.dong.spu.activity.kai.view.ItemViewVertical>
+
+                        <com.spu.dong.spu.activity.kai.view.ItemViewVertical
+                            android:id="@+id/item_sifating"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="0.5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/btn_click_selector"
+                            app:icon_vertical="@drawable/image013"
+                            app:title_text_vertical="宁夏司法厅"></com.spu.dong.spu.activity.kai.view.ItemViewVertical>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="1dp"
+                        android:background="#f5f5f5"
+                        android:orientation="horizontal">
+
+                        <com.spu.dong.spu.activity.kai.view.ItemViewVertical
+                            android:id="@+id/item_caizhengting"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="0.5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/btn_click_selector"
+                            app:icon_vertical="@drawable/image001"
+                            app:title_text_vertical="宁夏财政厅"></com.spu.dong.spu.activity.kai.view.ItemViewVertical>
+
+                        <com.spu.dong.spu.activity.kai.view.ItemViewVertical
+                            android:id="@+id/item_renliziyuan"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="0.5dp"
+                            android:layout_marginRight="0.5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/btn_click_selector"
+                            app:icon_vertical="@drawable/image011"
+                            app:title_text_vertical="宁夏人力资源"></com.spu.dong.spu.activity.kai.view.ItemViewVertical>
+
+                        <com.spu.dong.spu.activity.kai.view.ItemViewVertical
+                            android:id="@+id/item_guotuziyuan"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="0.5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/btn_click_selector"
+                            app:icon_vertical="@drawable/image001"
+                            app:title_text_vertical="宁夏国土资源厅"></com.spu.dong.spu.activity.kai.view.ItemViewVertical>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="1dp"
+                        android:background="#f5f5f5"
+                        android:orientation="horizontal">
+
+                        <com.spu.dong.spu.activity.kai.view.ItemViewVertical
+                            android:id="@+id/item_huanjingbaohuting"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="0.5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/btn_click_selector"
+                            app:icon_vertical="@drawable/image006"
+                            app:title_text_vertical="宁夏环境保护厅"></com.spu.dong.spu.activity.kai.view.ItemViewVertical>
+
+                        <com.spu.dong.spu.activity.kai.view.ItemViewVertical
+                            android:id="@+id/item_zhufangchengxiangjianshe"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="0.5dp"
+                            android:layout_marginRight="0.5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/btn_click_selector"
+                            app:icon_vertical="@drawable/image018"
+                            app:title_text_vertical="宁夏住房和城乡建设厅"></com.spu.dong.spu.activity.kai.view.ItemViewVertical>
+
+                        <com.spu.dong.spu.activity.kai.view.ItemViewVertical
+                            android:id="@+id/item_jiaotongyunshuting"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="0.5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/btn_click_selector"
+                            app:icon_vertical="@drawable/image001"
+                            app:title_text_vertical="宁夏交通运输厅"></com.spu.dong.spu.activity.kai.view.ItemViewVertical>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="1dp"
+                        android:layout_weight="1"
+                        android:background="#f5f5f5"
+                        android:orientation="horizontal">
+
+                        <com.spu.dong.spu.activity.kai.view.ItemViewVertical
+                            android:id="@+id/item_shuiliting"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="0.5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/btn_click_selector"
+                            app:icon_vertical="@drawable/image015"
+                            app:title_text_vertical="宁夏水利厅"></com.spu.dong.spu.activity.kai.view.ItemViewVertical>
+
+                        <com.spu.dong.spu.activity.kai.view.ItemViewVertical
+                            android:id="@+id/item_nongmuting"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="0.5dp"
+                            android:layout_marginRight="0.5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/btn_click_selector"
+                            app:icon_vertical="@drawable/image008"
+                            app:title_text_vertical="宁夏农牧厅"></com.spu.dong.spu.activity.kai.view.ItemViewVertical>
+
+                        <com.spu.dong.spu.activity.kai.view.ItemViewVertical
+                            android:id="@+id/item_weishenghejihuashengyu"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="0.5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/btn_click_selector"
+                            app:icon_vertical="@drawable/image016"
+                            app:title_text_vertical="宁夏卫生和计划生育"></com.spu.dong.spu.activity.kai.view.ItemViewVertical>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="1dp"
+                        android:background="#f5f5f5"
+                        android:orientation="horizontal">
+
+                        <com.spu.dong.spu.activity.kai.view.ItemViewVertical
+                            android:id="@+id/item_shuiwuju"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="0.5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/btn_click_selector"
+                            app:icon_vertical="@drawable/image012"
+                            app:title_text_vertical="宁夏网上税务局"></com.spu.dong.spu.activity.kai.view.ItemViewVertical>
+
+                        <com.spu.dong.spu.activity.kai.view.ItemViewVertical
+                            android:id="@+id/item_gongshangxingzhengguanli"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="0.5dp"
+                            android:layout_marginRight="0.5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/btn_click_selector"
+                            app:icon_vertical="@drawable/image009"
+                            app:title_text_vertical="宁夏工商行政管理局"></com.spu.dong.spu.activity.kai.view.ItemViewVertical>
+
+                        <com.spu.dong.spu.activity.kai.view.ItemViewVertical
+                            android:id="@+id/item_zhiliangxingzhengjiandu"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="0.5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/btn_click_selector"
+                            app:icon_vertical="@drawable/image022"
+                            app:title_text_vertical="宁夏质量技术监督局"></com.spu.dong.spu.activity.kai.view.ItemViewVertical>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="1dp"
+                        android:background="#f5f5f5"
+                        android:orientation="horizontal">
+
+                        <com.spu.dong.spu.activity.kai.view.ItemViewVertical
+                            android:id="@+id/item_xinwenchubanguangdian"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="0.5dp"
+                            android:layout_marginRight="0.5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/btn_click_selector"
+                            app:icon_vertical="@drawable/image001"
+                            app:title_text_vertical="宁夏新闻出版广电局"></com.spu.dong.spu.activity.kai.view.ItemViewVertical>
+
+                        <com.spu.dong.spu.activity.kai.view.ItemViewVertical
+                            android:id="@+id/item_shipingyaopingjianduguanli"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="0.5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/btn_click_selector"
+                            app:icon_vertical="@drawable/image012"
+                            app:title_text_vertical="宁夏食品药品监督管理局"></com.spu.dong.spu.activity.kai.view.ItemViewVertical>
+
+                        <com.spu.dong.spu.activity.kai.view.ItemViewVertical
+                            android:id="@+id/item_shengsifating"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="0.5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/btn_click_selector"></com.spu.dong.spu.activity.kai.view.ItemViewVertical>
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

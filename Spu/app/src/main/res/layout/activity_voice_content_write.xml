@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="#C70505"
+            app:navigationIcon="@drawable/ic_back">
+        </android.support.v7.widget.Toolbar>
+        <TextView
+            android:textSize="18sp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textColor="#ffffffff"
+            android:gravity="center"
+            android:text="民声"/>
+    </android.support.constraint.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:gravity="bottom">
+        <TextView
+            android:textSize="25sp"
+            android:text="标题"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/et_title"
+            android:maxLength="25"
+            android:layout_marginLeft="10dp"
+            android:hint="最多25个字简要概括内容"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"/>
+    </LinearLayout>
+    <View
+        android:background="#e1e1e1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"/>
+    <EditText
+        android:id="@+id/et_content"
+        android:background="@drawable/edit_bg"
+        android:hint="请输入您的问题，我们会尽快处理"
+        android:gravity="top"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="180dp" />
+    <ImageView
+        android:id="@+id/iv_image_upload"
+        android:src="@drawable/jia"
+        android:layout_margin="10dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp" />
+    <Button
+        android:id="@+id/btn_commit"
+        android:text="提交"
+        android:textColor="#ffffffff"
+        android:background="@drawable/button_bg"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

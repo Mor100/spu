@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <cn.bingoogolapple.refreshlayout.BGARefreshLayout
+        android:id="@+id/bga_news_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_newslist"
+                android:background="@color/status_color_grey"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="0dp">
+
+            </android.support.v7.widget.RecyclerView>
+
+    </cn.bingoogolapple.refreshlayout.BGARefreshLayout>
+
+    <com.spu.dong.spu.activity.view.TipView
+        android:id="@+id/tip_view"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:visibility="gone"
+        app:tipBackgroundColor="@color/tip_view_bg"
+        app:tipTextColor="@color/tip_view_text_color"
+        app:tipTextSize="14sp"
+        ></com.spu.dong.spu.activity.view.TipView>
+    <ImageView
+        android:layout_marginBottom="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/iv_gov_peple_background1"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/shape_demo_xiuxiuxiu"
+        />
+    <ImageView
+        android:layout_marginBottom="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/iv_gov_peple_background2"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/shape_demo_xiuxiuxiu"
+        />
+    <ImageView
+        android:id="@+id/tv_gov_now_people"
+        android:layout_marginBottom="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/write"
+        android:layout_width="40dp"
+        android:layout_height="40dp" />
+</RelativeLayout>

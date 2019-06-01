@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <RelativeLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp">
+
+                    <ImageView
+                        android:id="@+id/tv_demo_imageview"
+                        android:background="@color/SeaGreen"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                </RelativeLayout>
+
+                <!--<com.spu.dong.spu.activity.demo.MyView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:id="@+id/myview_demo"-->
+                    <!--/>-->
+                <ImageView
+                    android:layout_centerInParent="true"
+                    android:layout_width="50dp"
+                    android:id="@+id/iv_animation_demo"
+                    android:background="@drawable/demoviewpager1"
+                    android:layout_height="50dp" />
+
+
+
+
+                <ImageView
+                    android:layout_above="@+id/iv_animation_demo"
+                    android:layout_centerInParent="true"
+                    android:layout_width="50dp"
+                    android:id="@+id/iv_animation_demo3"
+                    android:background="@drawable/shape_demo_xiuxiuxiu"
+                    android:layout_height="50dp" />
+                <ImageView
+                    android:layout_above="@+id/iv_animation_demo"
+                    android:layout_centerInParent="true"
+                    android:layout_width="50dp"
+                    android:id="@+id/iv_animation_demo4"
+                    android:background="@drawable/shape_demo_xiuxiuxiu"
+                    android:layout_height="50dp" />
+                <ImageView
+                    android:layout_centerHorizontal="true"
+                    android:layout_above="@+id/iv_animation_demo"
+                    android:layout_width="50dp"
+                    android:id="@+id/iv_animation_demo2"
+                    android:background="@drawable/shape_demo_xiuxiuxiu"
+                    android:layout_height="50dp" />
+                <ImageView
+                    android:layout_centerHorizontal="true"
+                    android:layout_above="@+id/iv_animation_demo"
+                    android:background="@drawable/write"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp" />
+
+                <ImageView
+                    android:layout_marginBottom="20dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/iv_gov_peple_background1"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/shape_demo_xiuxiuxiu"
+                    />
+                <ImageView
+                    android:layout_marginBottom="20dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/iv_gov_peple_background2"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/shape_demo_xiuxiuxiu"
+                    />
+                <ImageView
+                    android:layout_marginBottom="20dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/write"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp" />
+                <com.spu.dong.spu.activity.demo.MyViewObjectAnimator
+                    android:id="@+id/mvoa_demo"
+                    android:layout_alignParentBottom="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+
+</LinearLayout>

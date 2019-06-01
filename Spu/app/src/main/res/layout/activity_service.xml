@@ -1,0 +1,866 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#f5f5f5"
+    android:orientation="vertical"
+    >
+    <RelativeLayout
+        android:background="@color/colorRedDeep"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:textSize="18sp"
+            android:textColor="@color/tab_write"
+            android:text="@string/serviceTitle"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="220dp"
+                    android:background="@drawable/banner" />
+
+                <com.spu.dong.spu.activity.kai.view.AddressServiceView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_alignParentRight="true"
+                    app:address_text="武汉"></com.spu.dong.spu.activity.kai.view.AddressServiceView>
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="8dp"
+                android:paddingLeft="15dp"
+                android:paddingTop="15dp"
+                android:text="热门服务"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:orientation="horizontal">
+
+                <com.spu.dong.spu.activity.kai.view.ItemViewVertical
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:icon_vertical="@drawable/a1"
+                    app:title_text_vertical="电视"></com.spu.dong.spu.activity.kai.view.ItemViewVertical>
+
+                <com.spu.dong.spu.activity.kai.view.ItemViewVertical
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:icon_vertical="@drawable/a2"
+                    app:title_text_vertical="云市场"></com.spu.dong.spu.activity.kai.view.ItemViewVertical>
+
+                <com.spu.dong.spu.activity.kai.view.ItemViewVertical
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:icon_vertical="@drawable/a3"
+                    app:title_text_vertical="爆料"></com.spu.dong.spu.activity.kai.view.ItemViewVertical>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="8dp"
+                android:paddingLeft="15dp"
+                android:paddingTop="15dp"
+                android:text="文化生活"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="1dp"
+                    android:background="#f5f5f5"
+                    android:orientation="horizontal">
+                    <com.spu.dong.spu.activity.kai.view.ItemView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="0.5dp"
+                        android:layout_weight="1"
+                        app:icon="@drawable/b1"
+                        app:title_text="两微"></com.spu.dong.spu.activity.kai.view.ItemView>
+                    <com.spu.dong.spu.activity.kai.view.ItemView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="0.5dp"
+                        android:layout_weight="1"
+                        app:icon="@drawable/b2"
+                        app:title_text="找工作"></com.spu.dong.spu.activity.kai.view.ItemView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="1dp"
+                    android:background="#f5f5f5"
+                    android:orientation="horizontal">
+
+                    <com.spu.dong.spu.activity.kai.view.ItemView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="0.5dp"
+                        android:layout_weight="1"
+
+                        app:icon="@drawable/b3"
+                        app:title_text="特色旅游"></com.spu.dong.spu.activity.kai.view.ItemView>
+
+                    <com.spu.dong.spu.activity.kai.view.ItemView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="0.5dp"
+                        android:layout_weight="1"
+
+                        app:icon="@drawable/b4"
+                        app:title_text="景点门票"></com.spu.dong.spu.activity.kai.view.ItemView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="1dp"
+                    android:background="#f5f5f5"
+                    android:orientation="horizontal">
+
+                    <com.spu.dong.spu.activity.kai.view.ItemView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="0.5dp"
+                        android:layout_weight="1"
+                        app:icon="@drawable/b5"
+                        app:title_text="酒店"></com.spu.dong.spu.activity.kai.view.ItemView>
+
+                    <com.spu.dong.spu.activity.kai.view.ItemView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="0.5dp"
+                        android:layout_weight="1"
+                        app:icon="@drawable/b6"
+                        app:title_text="外卖"></com.spu.dong.spu.activity.kai.view.ItemView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="1dp"
+                    android:background="#f5f5f5"
+                    android:orientation="horizontal">
+
+                    <com.spu.dong.spu.activity.kai.view.ItemView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="0.5dp"
+                        android:layout_weight="1"
+                        app:icon="@drawable/b7"
+                        app:title_text="快递"></com.spu.dong.spu.activity.kai.view.ItemView>
+
+                    <com.spu.dong.spu.activity.kai.view.ItemView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="0.5dp"
+                        android:layout_weight="1"
+                        app:icon="@drawable/b8"
+                        app:title_text="美食团购"></com.spu.dong.spu.activity.kai.view.ItemView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#f5f5f5"
+                    android:orientation="horizontal">
+
+                    <com.spu.dong.spu.activity.kai.view.ItemView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="0.5dp"
+                        android:layout_weight="1"
+                        app:icon="@drawable/b9"
+                        app:title_text="美食地图"></com.spu.dong.spu.activity.kai.view.ItemView>
+
+                    <com.spu.dong.spu.activity.kai.view.ItemView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="0.5dp"
+                        android:layout_weight="1"
+                        app:icon="@drawable/b10"
+                        app:title_text="看电影"></com.spu.dong.spu.activity.kai.view.ItemView>
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="8dp"
+                android:paddingLeft="15dp"
+                android:paddingTop="15dp"
+                android:text="充值缴费"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="1dp"
+                    android:background="#f5f5f5"
+                    android:orientation="horizontal">
+
+                    <com.spu.dong.spu.activity.kai.view.ItemView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="0.5dp"
+                        android:layout_weight="1"
+                        app:icon="@drawable/c1"
+                        app:title_text="移动"></com.spu.dong.spu.activity.kai.view.ItemView>
+
+                    <com.spu.dong.spu.activity.kai.view.ItemView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="0.5dp"
+                        android:layout_weight="1"
+                        app:icon="@drawable/c2"
+                        app:title_text="联通"></com.spu.dong.spu.activity.kai.view.ItemView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="1dp"
+                    android:background="#f5f5f5"
+                    android:orientation="horizontal">
+
+                    <com.spu.dong.spu.activity.kai.view.ItemView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="0.5dp"
+                        android:layout_weight="1"
+                        app:icon="@drawable/c3"
+                        app:title_text="电信"></com.spu.dong.spu.activity.kai.view.ItemView>
+
+                    <com.spu.dong.spu.activity.kai.view.ItemView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="0.5dp"
+                        android:layout_weight="1"
+                        app:icon="@drawable/c4"
+                        app:title_text="综合充值"></com.spu.dong.spu.activity.kai.view.ItemView>
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="8dp"
+                android:paddingLeft="15dp"
+                android:paddingTop="15dp"
+                android:text="政务办事"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="1dp"
+                    android:background="#f5f5f5"
+                    android:orientation="horizontal">
+
+                    <com.spu.dong.spu.activity.kai.view.ItemView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="0.5dp"
+                        android:layout_weight="1"
+                        app:icon="@drawable/d1"
+                        app:title_text="公积金"></com.spu.dong.spu.activity.kai.view.ItemView>
+
+                    <com.spu.dong.spu.activity.kai.view.ItemView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="0.5dp"
+                        android:layout_weight="1"
+                        app:icon="@drawable/d2"
+                        app:title_text="高考查询"></com.spu.dong.spu.activity.kai.view.ItemView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="1dp"
+                    android:background="#f5f5f5"
+                    android:orientation="horizontal">
+
+                    <com.spu.dong.spu.activity.kai.view.ItemView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="0.5dp"
+                        android:layout_weight="1"
+                        app:icon="@drawable/d3"
+                        app:title_text="工商投诉"></com.spu.dong.spu.activity.kai.view.ItemView>
+
+                    <com.spu.dong.spu.activity.kai.view.ItemView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="0.5dp"
+                        android:layout_weight="1"
+                        app:icon="@drawable/d4"
+                        app:title_text="消费投诉"></com.spu.dong.spu.activity.kai.view.ItemView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="1dp"
+                    android:background="#f5f5f5"
+                    android:orientation="horizontal">
+
+                    <com.spu.dong.spu.activity.kai.view.ItemView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="0.5dp"
+                        android:layout_weight="1"
+                        app:icon="@drawable/d5"
+                        app:title_text="不良信息举报"></com.spu.dong.spu.activity.kai.view.ItemView>
+
+                    <com.spu.dong.spu.activity.kai.view.ItemView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="0.5dp"
+                        android:layout_weight="1"
+                        app:icon="@drawable/d6"
+                        app:title_text="中标公告"></com.spu.dong.spu.activity.kai.view.ItemView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="1dp"
+                    android:background="#f5f5f5"
+                    android:orientation="horizontal">
+
+                    <com.spu.dong.spu.activity.kai.view.ItemView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="0.5dp"
+                        android:layout_weight="1"
+                        app:icon="@drawable/d7"
+                        app:title_text="检察院业务受理"></com.spu.dong.spu.activity.kai.view.ItemView>
+
+                    <com.spu.dong.spu.activity.kai.view.ItemView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="0.5dp"
+                        android:layout_weight="1"
+                        app:icon="@drawable/d8"
+                        app:title_text="户政查询"></com.spu.dong.spu.activity.kai.view.ItemView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="1dp"
+                    android:background="#f5f5f5"
+                    android:orientation="horizontal">
+
+                    <com.spu.dong.spu.activity.kai.view.ItemView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="0.5dp"
+                        android:layout_weight="1"
+                        app:icon="@drawable/d9"
+                        app:title_text="权责清单"></com.spu.dong.spu.activity.kai.view.ItemView>
+
+                    <com.spu.dong.spu.activity.kai.view.ItemView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="0.5dp"
+                        android:layout_weight="1"
+                        app:icon="@drawable/d10"
+                        app:title_text="民声"></com.spu.dong.spu.activity.kai.view.ItemView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="1dp"
+                    android:background="#f5f5f5"
+                    android:orientation="horizontal">
+
+                    <com.spu.dong.spu.activity.kai.view.ItemView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="0.5dp"
+                        android:layout_weight="1"
+                        app:icon="@drawable/d11"
+                        app:title_text="执法办案查询"></com.spu.dong.spu.activity.kai.view.ItemView>
+
+                    <com.spu.dong.spu.activity.kai.view.ItemView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="0.5dp"
+                        android:layout_weight="1"
+                        app:icon="@drawable/d1"
+                        app:title_text="出入境办证"></com.spu.dong.spu.activity.kai.view.ItemView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="1dp"
+                    android:background="#f5f5f5"
+                    android:orientation="horizontal">
+
+                    <com.spu.dong.spu.activity.kai.view.ItemView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="0.5dp"
+                        android:layout_weight="1"
+                        app:icon="@drawable/d1"
+                        app:title_text="发票查询"></com.spu.dong.spu.activity.kai.view.ItemView>
+
+                    <com.spu.dong.spu.activity.kai.view.ItemView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="0.5dp"
+                        android:layout_weight="1"
+                        app:icon="@drawable/d11"
+                        app:title_text="工商大数据"></com.spu.dong.spu.activity.kai.view.ItemView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="1dp"
+                    android:background="#f5f5f5"
+                    android:orientation="horizontal">
+
+                    <com.spu.dong.spu.activity.kai.view.ItemView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="0.5dp"
+                        android:layout_weight="1"
+                        app:icon="@drawable/d3"
+                        app:title_text="毕业证查询"></com.spu.dong.spu.activity.kai.view.ItemView>
+
+                    <com.spu.dong.spu.activity.kai.view.ItemView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="0.5dp"
+                        android:layout_weight="1"
+                        app:icon="@drawable/d6"
+                        app:title_text="企业信用"></com.spu.dong.spu.activity.kai.view.ItemView>
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="8dp"
+                android:paddingLeft="15dp"
+                android:paddingTop="15dp"
+                android:text="医疗服务"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="1dp"
+                    android:background="#f5f5f5"
+                    android:orientation="horizontal">
+
+                    <com.spu.dong.spu.activity.kai.view.ItemView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="0.5dp"
+                        android:layout_weight="1"
+                        app:icon="@drawable/e1"
+                        app:title_text="孕育宝典"></com.spu.dong.spu.activity.kai.view.ItemView>
+
+                    <com.spu.dong.spu.activity.kai.view.ItemView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="0.5dp"
+                        android:layout_weight="1"
+                        app:icon="@drawable/e2"
+                        app:title_text="中南医院"></com.spu.dong.spu.activity.kai.view.ItemView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="1dp"
+                    android:background="#f5f5f5"
+                    android:orientation="horizontal">
+
+                    <com.spu.dong.spu.activity.kai.view.ItemView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="0.5dp"
+                        android:layout_weight="1"
+                        app:icon="@drawable/e3"
+                        app:title_text="协和医院"></com.spu.dong.spu.activity.kai.view.ItemView>
+
+                    <com.spu.dong.spu.activity.kai.view.ItemView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="0.5dp"
+                        android:layout_weight="1"
+                        app:icon="@drawable/e1"
+                        app:title_text="湖北省人民医院"></com.spu.dong.spu.activity.kai.view.ItemView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="1dp"
+                    android:background="#f5f5f5"
+                    android:orientation="horizontal">
+
+                    <com.spu.dong.spu.activity.kai.view.ItemView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="0.5dp"
+                        android:layout_weight="1"
+                        app:icon="@drawable/e2"
+                        app:title_text="广州军区武汉总医院"></com.spu.dong.spu.activity.kai.view.ItemView>
+
+                    <com.spu.dong.spu.activity.kai.view.ItemView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="0.5dp"
+                        android:layout_weight="1"
+                        app:icon="@drawable/e3"
+                        app:title_text="掌上医院"></com.spu.dong.spu.activity.kai.view.ItemView>
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="8dp"
+                android:paddingLeft="15dp"
+                android:paddingTop="15dp"
+                android:text="交通出行"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dp"
+                android:background="#f5f5f5"
+                android:orientation="horizontal">
+
+                <com.spu.dong.spu.activity.kai.view.ItemView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="0.5dp"
+                    android:layout_weight="1"
+                    app:icon="@drawable/f1"
+                    app:title_text="武汉通余额查询"></com.spu.dong.spu.activity.kai.view.ItemView>
+
+                <com.spu.dong.spu.activity.kai.view.ItemView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="0.5dp"
+                    android:layout_weight="1"
+                    app:icon="@drawable/f2"
+                    app:title_text="交通业务查询"></com.spu.dong.spu.activity.kai.view.ItemView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dp"
+                android:background="#f5f5f5"
+                android:orientation="horizontal">
+
+                <com.spu.dong.spu.activity.kai.view.ItemView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="0.5dp"
+                    android:layout_weight="1"
+                    app:icon="@drawable/f3"
+                    app:title_text="交通法规"></com.spu.dong.spu.activity.kai.view.ItemView>
+
+                <com.spu.dong.spu.activity.kai.view.ItemView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="0.5dp"
+                    android:layout_weight="1"
+                    app:icon="@drawable/f4"
+                    app:title_text="公交查询"></com.spu.dong.spu.activity.kai.view.ItemView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dp"
+                android:background="#f5f5f5"
+                android:orientation="horizontal">
+
+                <com.spu.dong.spu.activity.kai.view.ItemView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="0.5dp"
+                    android:layout_weight="1"
+                    app:icon="@drawable/f5"
+                    app:title_text="隧道通行"></com.spu.dong.spu.activity.kai.view.ItemView>
+
+                <com.spu.dong.spu.activity.kai.view.ItemView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="0.5dp"
+                    android:layout_weight="1"
+                    app:icon="@drawable/f6"
+                    app:title_text="实时路况"></com.spu.dong.spu.activity.kai.view.ItemView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dp"
+                android:background="#f5f5f5"
+                android:orientation="horizontal">
+
+                <com.spu.dong.spu.activity.kai.view.ItemView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="0.5dp"
+                    android:layout_weight="1"
+                    app:icon="@drawable/f7"
+                    app:title_text="全城路况"></com.spu.dong.spu.activity.kai.view.ItemView>
+
+                <com.spu.dong.spu.activity.kai.view.ItemView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="0.5dp"
+                    android:layout_weight="1"
+                    app:icon="@drawable/f8"
+                    app:title_text="代驾"></com.spu.dong.spu.activity.kai.view.ItemView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dp"
+                android:background="#f5f5f5"
+                android:orientation="horizontal">
+
+                <com.spu.dong.spu.activity.kai.view.ItemView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="0.5dp"
+                    android:layout_weight="1"
+                    app:icon="@drawable/f9"
+                    app:title_text="打车"></com.spu.dong.spu.activity.kai.view.ItemView>
+
+                <com.spu.dong.spu.activity.kai.view.ItemView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="0.5dp"
+                    android:layout_weight="1"
+                    app:icon="@drawable/f4"
+                    app:title_text="航班查询"></com.spu.dong.spu.activity.kai.view.ItemView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dp"
+                android:background="#f5f5f5"
+                android:orientation="horizontal">
+
+                <com.spu.dong.spu.activity.kai.view.ItemView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="0.5dp"
+                    android:layout_weight="1"
+                    app:icon="@drawable/f1"
+                    app:title_text="火车查询"></com.spu.dong.spu.activity.kai.view.ItemView>
+
+                <com.spu.dong.spu.activity.kai.view.ItemView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="0.5dp"
+                    android:layout_weight="1"></com.spu.dong.spu.activity.kai.view.ItemView>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="8dp"
+                android:paddingLeft="15dp"
+                android:paddingTop="15dp"
+                android:text="气象环保"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dp"
+                android:background="#f5f5f5"
+                android:orientation="horizontal">
+
+                <com.spu.dong.spu.activity.kai.view.ItemView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="0.5dp"
+                    android:layout_weight="1"
+                    app:icon="@drawable/g1"
+                    app:title_text="pm2.5"></com.spu.dong.spu.activity.kai.view.ItemView>
+
+                <com.spu.dong.spu.activity.kai.view.ItemView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="0.5dp"
+                    android:layout_weight="1"
+                    app:icon="@drawable/g2"
+                    app:title_text="污染地图"></com.spu.dong.spu.activity.kai.view.ItemView>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="8dp"
+                android:paddingLeft="15dp"
+                android:paddingTop="15dp"
+                android:text="车主服务"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dp"
+                android:background="#f5f5f5"
+                android:orientation="horizontal">
+
+                <com.spu.dong.spu.activity.kai.view.ItemView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="0.5dp"
+                    android:layout_weight="1"
+                    app:icon="@drawable/h1"
+                    app:title_text="车险报价"></com.spu.dong.spu.activity.kai.view.ItemView>
+
+                <com.spu.dong.spu.activity.kai.view.ItemView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="0.5dp"
+                    android:layout_weight="1"
+                    app:icon="@drawable/h2"
+                    app:title_text="违章查询"></com.spu.dong.spu.activity.kai.view.ItemView>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="8dp"
+                android:paddingLeft="15dp"
+                android:paddingTop="15dp"
+                android:text="综合服务"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="1dp"
+                    android:background="#f5f5f5"
+                    android:orientation="horizontal">
+
+                    <com.spu.dong.spu.activity.kai.view.ItemView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="0.5dp"
+                        android:layout_weight="1"
+                        app:icon="@drawable/i1"
+                        app:title_text="新华字典"></com.spu.dong.spu.activity.kai.view.ItemView>
+
+                    <com.spu.dong.spu.activity.kai.view.ItemView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="0.5dp"
+                        android:layout_weight="1"
+                        app:icon="@drawable/i2"
+                        app:title_text="号码百事通"></com.spu.dong.spu.activity.kai.view.ItemView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="1dp"
+                    android:background="#f5f5f5"
+                    android:orientation="horizontal">
+
+                    <com.spu.dong.spu.activity.kai.view.ItemView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="0.5dp"
+                        android:layout_weight="1"
+                        app:icon="@drawable/i3"
+                        app:title_text="读书"></com.spu.dong.spu.activity.kai.view.ItemView>
+
+                    <com.spu.dong.spu.activity.kai.view.ItemView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="0.5dp"
+                        android:layout_weight="1"
+                        app:icon="@drawable/i1"
+                        app:title_text="名片"></com.spu.dong.spu.activity.kai.view.ItemView>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:padding="10dp"
+
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/iv_news_recycler_item_image"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:background="@drawable/question"
+        />
+    <TextView
+
+        android:layout_below="@+id/iv_news_recycler_item_image"
+        android:visibility="visible"
+        android:text="待审核"
+        android:padding="3dp"
+        android:gravity="center_horizontal"
+        android:textColor="@color/grey"
+        android:background="@drawable/shape_gov_nows_grey"
+        android:id="@+id/iv_news_recycler_item_degree"
+        android:layout_width="43dp"
+
+        android:layout_height="wrap_content"
+        android:textSize="10sp"
+        />
+
+    <TextView
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/iv_news_recycler_item_image"
+        android:id="@+id/tv_news_recycler_item_title"
+        android:textSize="17sp"
+        android:text="@string/newsListTitle3"
+        android:textColor="@color/text_black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/iv_news_recycler_item_image"
+        android:layout_below="@+id/rl_myquestion"
+        android:id="@+id/tv_news_recycler_item_content"
+        android:textSize="17sp"
+        android:text="@string/newsListTitle4"
+        android:textColor="@color/text_black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_marginLeft="5dp"
+        android:id="@+id/rl_myquestion"
+        android:layout_toRightOf="@+id/iv_news_recycler_item_image"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/tv_news_recycler_item_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+
+            android:layout_toRightOf="@+id/iv_news_recycler_item_top"
+            android:text="2018年08月15日"
+            android:id="@+id/iv_news_recycler_item_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:textSize="10sp"
+            />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

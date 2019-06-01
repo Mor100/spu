@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:padding="10dp"
+
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="85dp">
+
+    <ImageView
+        android:scaleType="fitXY"
+        android:id="@+id/iv_news_recycler_item_image"
+        android:layout_width="100dp"
+        android:layout_height="70dp"
+        android:background="@drawable/nopic"
+        />
+    <TextView
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/iv_news_recycler_item_image"
+        android:id="@+id/tv_news_recycler_item_title"
+        android:textSize="17sp"
+        android:text="@string/newsListTitle"
+        android:textColor="@color/text_black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <RelativeLayout
+        android:layout_toRightOf="@+id/iv_news_recycler_item_image"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+        <TextView
+
+            android:layout_toRightOf="@+id/iv_news_recycler_item_top"
+            android:text="2014 0802 123"
+            android:id="@+id/iv_news_recycler_item_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:textSize="9sp"
+            />
+        <TextView
+            android:layout_marginLeft="3dp"
+            android:layout_centerVertical="true"
+            android:text="置顶"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp"
+            android:textColor="@color/status_color_red"
+            android:background="@drawable/shape_gov_nows_red_no_corners"
+            android:id="@+id/iv_news_recycler_item_top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:textSize="9sp"
+            />
+
+        <TextView
+            android:layout_centerVertical="true"
+            android:visibility="gone"
+            android:layout_alignParentRight="true"
+            android:text="已办结"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp"
+            android:textColor="@color/SeaGreen"
+            android:background="@drawable/shape_gov_nows_green"
+            android:id="@+id/iv_news_recycler_item_degree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>

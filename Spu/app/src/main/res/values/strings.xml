@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">六盘云</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!--底部五个按钮-->
+    <string name ="firstname">新闻</string>
+    <string name ="secondname">政务</string>
+    <string name ="thridname">服务</string>
+    <string name ="fouthname">爆料</string>
+    <string name ="fifthname">我</string>
+    <!--民生内容-->
+    <string name ="peoplecontent">黄石市黄石港区江北管理区芦苇村江北新城2号水稻堵塞两年，粪便溢出遍地都是，
+    臭气巡天无人管，又正式三单元楼梯口，居民出行五路走</string>
+
+    <!--新闻页头标题-->
+    <string name = "newsTitle">六盘云</string>
+    <!--爆料页标题-->
+    <string name = "tipoffTitle">爆料</string>
+    <!--服务标题-->
+    <string name = "serviceTitle">服务</string>
+    <!--例子-->
+    <string name = "newsListTitle">习近平发“胜站之问”书强军答卷</string>
+    <string name = "newsListTitle3">测试</string>
+    <string name = "newsListTitle4">测试好不好用</string>
+    <string name = "newsListTitle2">武汉：重点打击投机炒房和黑中介</string>
+    <string name = "tipoffListTitle">南湖温馨路 一周堵7天 南湖路居民如何上下班</string>
+    <string name = "tipoffListTitle2">生活垃圾无法处理</string>
+    <string name = "tipoffImageTitle">详细简介点击进入</string>
+
+    <!--关于我们-->
+    <string name="aboutus">"六盘云"是由宁夏广电电视台打造的宁夏广播电视台官方门户APP，宁夏广电APP汇聚平台，
+    宁夏广电媒体融合基础和功能性产品，是宁夏官方政务信息汇聚平台。\n
+    "六盘云"一名取信息汇聚、媒体融合、力量汇聚之意。\n
+    "六盘云"三大特色：\n
+    （1）汇聚：汇聚全国、宁夏新闻资讯，汇聚宁夏政务信息，汇聚宁夏广电频道频率直播点播等。\n
+    （2）连通：省委省政府与群众的连通、全省政务平台的连通、媒体与受众的连通。\n
+    （3）服务：服务省委省政府，服务省直厅局和市州党委政府，服务全省广电系统</string>
+</resources>

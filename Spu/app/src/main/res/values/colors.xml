@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="text_black">#000000</color>
+    <color name="colorPrimary">#3F51B5</color>
+    <!--政务页已转办-->
+    <color name="colorPrimaryDark">#303F9F</color>
+    <!--政务已办结-->
+    <color name="SeaGreen">#2E8B57</color>
+    <color name="colorAccent">#FF4081</color>
+    <!--bottombar颜色-->
+    <color name="tab_bg">#F3F5F4</color>
+    <!--底部五个按钮选中颜色-->
+    <color name="status_color_red">#D33D3C</color>
+    <color name="tab_write">#ffe8e8e8</color>
+    <color name="colorRedDeep">#ffc80406</color>
+    <color name="colorRedDeepTou">#22b11919</color>
+    <color name="status_color_grey">#BDBDBD</color>
+
+    <!--item背景白色-->
+    <color name="background_login_bottom">#E4E4E4</color>
+    <color name="white">#FFFFFF</color>
+    <color name="white_ts">#77FFFFFF</color>
+    <color name="grey">#77434343</color>
+    <color name="tab_selected_color">#fff85959</color>
+    <color name="tip_view_bg">#D5E8F6</color>
+    <color name="tip_view_text_color">#4592C6</color>
+
+
+    <!--Demo无意义-->
+    <color name="tip_view_text_color2">#FF0000</color>
+    <color name="tip_view_text_color3">#0000FF</color>
+    <color name="news_tag_border_red">#F96B6B</color>
+    <color name="news_tag_border_blue">#3091D8</color>
+    <color name="selector_grey">#DDDDDD</color>
+    <color name="divider">#ffd8d8d8</color>
+
+
+</resources>

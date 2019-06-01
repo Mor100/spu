@@ -1,0 +1,142 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+
+    package="com.spu.dong.spu">
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:name=".activity.app.BaseApp"
+        android:theme="@style/AppTheme">
+        <activity android:name=".activity.activity.MainActivity"
+            android:launchMode="singleTask"
+            android:configChanges="orientation|screenSize"
+            >
+
+        </activity>
+
+        <activity android:name=".activity.activity.LaunchActivity"
+            android:launchMode="singleTask"
+            android:configChanges="orientation|screenSize"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <!--关于我们-->
+        <activity android:name=".activity.kai.activity.AboutUsActivity"
+            android:launchMode="singleTop"
+            android:configChanges="orientation|screenSize"
+            ></activity>
+        <!--建议-->
+        <activity android:name=".activity.kai.activity.SuggestionActivity"
+            android:launchMode="singleTop"
+            android:configChanges="orientation|screenSize"
+            ></activity>
+
+        <!--民生页面-->
+        <activity android:name=".activity.activity.PeolpeActivity"
+            android:launchMode="singleTop"
+            android:configChanges="orientation|screenSize"
+            >
+
+        </activity>
+        <!--网页activity-->
+        <activity android:name=".activity.activity.WebActivity"
+            android:configChanges="orientation|screenSize"
+            android:launchMode="singleTop"/>
+
+        <activity android:name=".activity.activity.MyFocusActivity"
+            android:configChanges="orientation|screenSize"
+            android:launchMode="singleTop"/>
+        <!--打电话页面-->
+        <activity android:name=".activity.activity.TipOffActivity"
+            android:configChanges="orientation|screenSize"
+            android:launchMode="singleTop"/>
+        <activity android:name=".activity.activity.VoiceContentWriteActivity"
+            android:launchMode="singleTop"
+            />
+        <!--动画Demo-->
+        <activity android:name=".activity.demo.ActivityDemo"
+            android:launchMode="singleTask"
+            >
+
+        </activity>
+
+
+        <service android:name=".activity.demo.MyService"
+            android:process="com.dongdong.wudi"
+            >
+
+            <intent-filter>
+                <action android:name="com.dongdong.niubi"/>
+
+            </intent-filter>
+        </service>
+        <service android:name=".activity.demo.MyServiceForMessenger"
+            android:process="com.dongdong.wudi2"
+            >
+
+            <intent-filter>
+                <action android:name="com.dongdong.niubi"/>
+
+            </intent-filter>
+        </service>
+        <activity android:name=".activity.demo.DemoAactivity"
+            android:launchMode="singleTask"
+            >
+
+        </activity>
+
+        <activity android:name=".activity.demo.DemoBactivity"
+            android:launchMode="singleTask"
+            android:configChanges="orientation"
+            >
+
+
+        </activity>
+        <activity android:name=".activity.activity.PeolpeMyQuestionActivity"
+            android:launchMode="singleTask"
+            android:configChanges="orientation|screenSize"
+            ></activity>
+        <activity android:name=".activity.demo.DemoCactivity"
+            android:launchMode="singleTop"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.SEND"/>
+                <action android:name="android.intent.action.SEND_TO"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data />
+            </intent-filter>
+
+        </activity>
+        <!--WebviewDemo-->
+        <activity android:name=".activity.demo.ActivityDemoForWebView"
+            android:launchMode="singleTask"
+            >
+
+        </activity>
+
+        <activity android:name=".activity.demo.ActivityDemoContent"
+            android:launchMode="singleTask"
+            >
+
+
+        </activity>
+
+        <provider android:name=".activity.demo.ContentProviderDemo"
+            android:authorities="com.spu.dong.spu.ContentProviderDemo"
+            />
+    </application>
+
+
+</manifest>
